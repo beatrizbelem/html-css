@@ -1,4 +1,122 @@
+/* global */
 body {
-  background-color: black;
-  color: white;
+  margin: 0;  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* utilitarios */
+
+.container {
+  width: 1336px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* minhas classes */
+.cinza {
+  background-color: #f3f3f3;
+  
+}
+.cinza .container {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-principal {
+  display: flex;
+}
+.menu-principal li a {
+  border-top: 2px solid transparent;
+  display: inline-block;
+  padding: 10px 7px 14px 7px;
+  font-weight: bold;
+
+}
+.menu-principal li span {
+  color: #ddd;
+  font-size: 12px;
+}
+.menu-principal li:nth-child(1) a {
+  color: #0668de;
+  padding-left: 0;
+}
+  .menu-principal li:nth-child(1) a:hover {
+    opacity: 0.7;
+  }
+.menu-principal LI:nth-child(2) a {
+  color: #c4170c;
+}
+  .menu-principal li:nth-child(2) a:hover {
+    border-color: #c4170c;
+  }
+.menu-principal li:nth-child(3) a {
+  color: #06aa48;
+}
+  .menu-principal li:nth-child(3) a:hover {
+    border-color: #06aa48;
+  }
+.menu-principal li:nth-child(4) a {
+  color: #ff6700;
+}
+  .menu-principal li:nth-child(4) a:hover {
+    border-color: #ff6700;
+  }
+.menu-principal li:nth-child(5) a {
+  color: #fb0234;
+}
+  .menu-principal li:nth-child(5) a:hover {
+    border-color: #fb0234;
+  }
+.menu-principal li:nth-child(6) a {
+  color: #1e4c9a;
+}
+  .menu-principal li:nth-child(6) a:hover {
+    border-color: #1e4c9a;
+  }
+.menu-secundario {
+  display: flex;
+  align-items: center;
+
+}
+.menu-secundario a {
+  color: #999;
+  font-size: 12px;
+  display: block;
+  padding: 12px 7px;
+}
+.menu-secundario__assine {
+  padding-right: 20px;
+}
+.menu-secundario__usuario {
+  display: flex;
+  align-items: center;
+}
+.menu-secundario__usuario a {
+  color: #666;
+}
+.vermelha { 
+  height: 74px;
+  background-color: #c4170c;
+  
+}
+.vermelha .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-buscar::placeholder {
+  text-transform: uppercase;
+
 }
